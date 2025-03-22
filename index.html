@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <h1 class="Text">JmD's Wordle</h1>
+    <div class="wordle-container">
+        <div class="row 1">
+            <div class="block" id="block-1"></div>
+            <div class="block" id="block-2"></div>
+            <div class="block" id="block-3"></div>
+            <div class="block" id="block-4"></div>
+            <div class="block" id="block-5"></div>
+        </div>
+        <div class="row 2">
+            <div class="block" id="block-6"></div>
+            <div class="block" id="block-7"></div>
+            <div class="block" id="block-8"></div>
+            <div class="block" id="block-9"></div>
+            <div class="block" id="block-10"></div>
+        </div>
+        <div class="row 3">
+            <div class="block" id="block-11"></div>
+            <div class="block" id="block-12"></div>
+            <div class="block" id="block-13"></div>
+            <div class="block" id="block-14"></div>
+            <div class="block" id="block-15"></div>
+        </div>
+        <div class="row 4">
+            <div class="block" id="block-16"></div>
+            <div class="block" id="block-17"></div>
+            <div class="block" id="block-18"></div>
+            <div class="block" id="block-19"></div>
+            <div class="block" id="block-20"></div>
+        </div>
+        <div class="row 5">
+            <div class="block" id="block-21"></div>
+            <div class="block" id="block-22"></div>
+            <div class="block" id="block-23"></div>
+            <div class="block" id="block-24"></div>
+            <div class="block" id="block-25"></div>
+        </div>
+        <div class="row 6">
+            <div class="block" id="block-26"></div>
+            <div class="block" id="block-27"></div>
+            <div class="block" id="block-28"></div>
+            <div class="block" id="block-29"></div>
+            <div class="block" id="block-30"></div>
+        </div>
+    </div>
+    <div class="keyboard">
+        <div class="line one">
+            <div class="key" id="q"><span>Q</span></div>
+            <div class="key" id="w"><span>W</span></div>
+            <div class="key" id="e"><span>E</span></div>
+            <div class="key" id="r"><span>R</span></div>
+            <div class="key" id="t"><span>T</span></div>
+            <div class="key" id="y"><span>Y</span></div>
+            <div class="key" id="u"><span>U</span></div>
+            <div class="key" id="i"><span>I</span></div>
+            <div class="key" id="o"><span>O</span></div>
+            <div class="key" id="p"><span>P</span></div>
+        </div>
+        <div class="line two">
+            <div class="key" id="a"><span>A</span></div>
+            <div class="key" id="s"><span>S</span></div>
+            <div class="key" id="d"><span>D</span></div>
+            <div class="key" id="f"><span>F</span></div>
+            <div class="key" id="g"><span>G</span></div>
+            <div class="key" id="h"><span>H</span></div>
+            <div class="key" id="j"><span>J</span></div>
+            <div class="key" id="k"><span>K</span></div>
+            <div class="key" id="l"><span>L</span></div>
+        </div>
+        <div class="line three">
+            <div class="key function" id="enter"><span>Enter</span></div>
+            <div class="key" id="z"><span>Z</span></div>
+            <div class="key" id="x"><span>X</span></div>
+            <div class="key" id="c"><span>C</span></div>
+            <div class="key" id="v"><span>V</span></div>
+            <div class="key" id="b"><span>B</span></div>
+            <div class="key" id="n"><span>N</span></div>
+            <div class="key" id="m"><span>M</span></div>
+            <div class="key function" id="delete"><span>Delete</span></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
