@@ -1297,7 +1297,7 @@ const wordList = [  'aback', 'abase', 'abate', 'abbey', 'abbot', 'abhor', 'abide
                     'zowee', 'zowie', 'zulus', 'zupan', 'zupas', 'zuppa', 'zurfs', 'zuzim', 'zygal', 'zygon', 
                     'zymes', 'zymic']
 
-// Select all elements with the class "key"
+
 const keys = [...document.querySelectorAll(".key")];
 const blocks = [...document.querySelectorAll(".block")];
 
@@ -1348,7 +1348,7 @@ const treatInput = (input) => {
                 animate("tada");
                 confetti();
                 setTimeout(() => {
-                    alert(`Good Boy! The word is ${word}`);
+                    alert(`The word is ${word}`);
                 }, 1000)
             } else {
                 string = "";
@@ -1356,7 +1356,7 @@ const treatInput = (input) => {
                 if (currentRow > 5) {
                     animate("hinge", 1);
                     setTimeout(() => {
-                        alert(`Bad Boy! The word is ${word}`);
+                        alert(`The word is ${word}`);
                     }, 1000)
                 } else {
                     animate("pulse", 1);
