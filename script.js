@@ -1347,17 +1347,19 @@ const treatInput = (input) => {
             if (string === word){
                 animate("tada");
                 confetti();
+                showResult()
                 setTimeout(() => {
-                    alert(`The word is ${word}`);
-                }, 1000)
+                    location.reload();
+                }, 3000)
             } else {
                 string = "";
                 currentRow += 1;
                 if (currentRow > 5) {
                     animate("hinge", 1);
+                    showResult()
                     setTimeout(() => {
-                        alert(`The word is ${word}`);
-                    }, 1000)
+                        location.reload();
+                    }, 3000)
                 } else {
                     animate("pulse", 1);
                 }
@@ -1472,4 +1474,9 @@ const unwhiten = () => {
     for (let i = 0; i < 5;i++) {
         blocks[i + currentRow*5].classList.remove("white")
     }
+}
+
+const showResult = () => {
+    $(".results").text(word);
+    $(".results").addClass("slide-down");
 }
