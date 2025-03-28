@@ -6,12 +6,45 @@
 }
 
 :root {
-    --background: rgb(80, 80, 80);
+    --background: rgb(50, 50, 50);
     --border-colour: rgb(133, 133, 133);
     --dark-gray: rgb(150, 150, 150);
-    --darker-gray: rgb(50, 50, 50);
-    --pink: rgb(192,144,153);
+    --darker-gray: rgb(10, 10, 10);
     --white: rgb(200, 200, 200);
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.results {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    top: -100px;
+    background-color: var(--darker-gray);
+    border-radius: 10px;
+    border: 2px solid black;
+    color: var(--white);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+
+
+}
+
+.slide-down {
+    animation: slideDown 1s ease-out forwards;
 }
 
 body {
@@ -65,7 +98,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    background-color: var(--darker-gray);
+    background-color: var(--background);
     border-radius: 5px;
     padding: 10px;
     width: 90%;
@@ -75,7 +108,7 @@ h1 {
 .line {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap:5px;
     width: 100%;
 }
 
@@ -119,6 +152,17 @@ h1 {
     background-color: var(--dark-gray);
 }
 
+@keyframes slideDown {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     .wordle-container {
@@ -126,7 +170,7 @@ h1 {
     }
 
     .keyboard {
-        max-width: 100%;
+        max-width: 90%;
     }
     
     .block {
